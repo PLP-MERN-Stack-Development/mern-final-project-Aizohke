@@ -1,0 +1,36 @@
+# This file tells Git what NOT to upload.
+
+# Dependencies
+# This will ignore node_modules in /client, /server, or any other folder
+**/node_modules/
+
+# Secrets
+# Never, ever, EVER commit your secret keys.
+.env
+.env.*
+*.env
+.env.local
+
+# Build output (from your Vite frontend)
+dist/
+.vite/
+
+# Logs (from your backend)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Local uploads (from Multer)
+uploads/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# Vite-specific cache
+*.timestamp-*.mjs
